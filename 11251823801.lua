@@ -2,10 +2,24 @@ pcall(function()
 	workspace:FindFirstChild("kill",true).Parent:Destroy()
 end)
 
-
 local gamename = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local version = game:HttpGet("https://raw.githubusercontent.com/TheScriptMaster1/zyer-hub/main/version")
+
+local currentVersion = "1.1"
+
+if not currentVersion == version then
+
+   OrionLib:MakeNotification({
+      Name = "Not Updated",
+      Content = "You're using an older version of Zyer Hub.",
+      Image = "rbxassetid://5107154082",
+      Time = 5
+   })
+
+end
 
 local Window = OrionLib:MakeWindow({Name = "Zyer Hub v1.1 | "..gamename, HidePremium = false, SaveConfig = false})
 
