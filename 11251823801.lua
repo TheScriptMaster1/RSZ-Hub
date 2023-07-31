@@ -1,9 +1,3 @@
-local supported_games = {
-	11251823801 -- Slap Battles but bad
-}
-
-if table.find(supported_games, game.PlaceId) then
-
 pcall(function()
 	workspace:FindFirstChild("kill",true).Parent:Destroy()
 end)
@@ -299,4 +293,3 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
 		})
 		end
 	end)
-end
