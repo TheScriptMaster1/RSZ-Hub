@@ -1,9 +1,3 @@
-local supported_games = {
-	11251823801 -- Slap Battles but bad
-}
-
-if table.find(supported_games, game.PlaceId) then
-
 local gamename = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
@@ -118,5 +112,3 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://1202200114",
 	Time = 3
 })
-
-end
