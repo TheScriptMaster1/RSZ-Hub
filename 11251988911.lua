@@ -1,1 +1,1 @@
-print("zyer hub sucks, go use scriptmaster hub instead")
+print("zyer hub is discontinued")
