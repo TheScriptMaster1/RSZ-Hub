@@ -4,5 +4,5 @@ local supported_games = {
 }
 
 if table.find(supported_games, game.PlaceId) then
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/TheScriptMaster1/zyer-hub/main/"..game.PlaceId..".lua"))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/TheScriptMaster1/RSZ-Hub/main/"..game.PlaceId..".lua"))()
 end
